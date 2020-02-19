@@ -1,0 +1,26 @@
+<h1>Restaurants#show</h1>
+<p>
+  <strong>Name:</strong>
+  <%= @restaurant.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @restaurant.address %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @restaurant.category %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @restaurant.phone_number %>
+</p>
+
+
+<%= link_to "add review",new_restaurant_review_path(@restaurant)  %>
+
+<%= link_to "Back",restaurants_path  %>
+
